@@ -6,4 +6,6 @@ public interface CurrencyExchangeService {
 
     CurrencyConversionBean getConvertedCurrency(String from, String to, Integer quantity);
 
+    CurrencyConversionBean getConvertedCurrencyUsingFeign(String from, String to, Integer quantity);
+
 }

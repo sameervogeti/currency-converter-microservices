@@ -21,6 +21,6 @@ public class CurrencyConverterController {
     public CurrencyConversionBean fromCurrencytoCurrency(@PathVariable String from,
                                                          @PathVariable String to,
                                                          @PathVariable Integer quantity) {
-        return currencyExchangeService.getConvertedCurrency(from, to, quantity);
+        return currencyExchangeService.getConvertedCurrencyUsingFeign(from, to, quantity);
     }
 }
